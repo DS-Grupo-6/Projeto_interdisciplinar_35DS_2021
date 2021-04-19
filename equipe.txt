@@ -1,0 +1,39 @@
+Equipe: 
+
+DSNG6
+
+Integrantes:
+
+Expedito Kayam Reis do Vale			n°:12
+João Vitor Lima da Silveira 			n° 20
+Juliano Kennedy Rodrigues			n°:23
+Maria Eduarda Silveira e Silva			n° 30
+Marco Antônio Pereira Alves Fonseca 		n°:28
+Túlio Henrique Gonçalves Simões 		n°:37
+Virgínia Letícia Afonso				n°:40
+
+Função:
+
+Expedito: Programação (ROXO)
+Os integrantes roxos, de programação, são os responsáveis gerais da programação envolvendo o jogo a ser produzido.
+
+João Vitor: Roteiro e universo (VERMELHO)
+O integrante vermlho é responsável pela roteirização e criação do universo do jogo, ou seja, criar a história e roteirizar o caminho a ser seguido durante a jogabilidade. 
+Isso incluí as ideias de habilidades e mecânicas de cada fase.
+
+Juliano: Design e criação (LARANJA)
+O integrante laranja é responsável pelo design e criação, ou seja, o visual do jogo. Isso inclui desde design de persoganens, antagonistas, items e do mundo em geral.
+
+Maria Eduarda: Trilha e gravações (AMARELO)
+O integrante amarelo é responsável pela trilha sonora e gravação,ou seja, os efeitos sonoros e música.
+
+Marco: Computação Gráfica (AZUL)
+O integrannte azul é responsável pela computação gráfica, então, assim como o integrante laranja, também trabalha com o visual do jogo. 
+
+Túlio: Programação (ROXO)
+Os integrantes roxos, de programação, são os responsáveis gerais da programação envolvendo o jogo a ser produzido.
+
+Virgínia: Continuidade e documentação (VERDE)
+O integrante azul cuida da documentação de todo o projeto, em geral. É responsável por manter a continuidade do projeto durante a produção.
+
+
