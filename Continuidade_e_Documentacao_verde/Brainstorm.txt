@@ -1,0 +1,30 @@
+Storytelling:
+História a ser contada:
+Uma jovem esforçada cai no sono durante o trabalho, ao acordar ela se vê em um mundo semelhante à realidade, mas algo está diferente;
+Gameplaying: Ela utilizara como sua principal arma o ambiente durante sua jornada, fugir de perigos eminentes.
+
+Protagonista:
+Nome: Helena
+Espécie: Humana;
+Etnia: Negra;
+Idade: 16 anos;
+Sexo: Feminino;
+Ocupação: Estudante, atendente;
+Histórico: Uma garota comum que trabalha como atendente de uma loja para ajudar seus pais, apesar de jovem já passou por muitas experiências que a incomadam.
+
+Antagonista:
+Nome: Aneleh;
+Espécie: Espectro;
+Idade: Jovem (16 a 20 anos);
+Sexo: Feminino;
+Etnia: indefinido;
+Ocupação: Governante;
+Histórico: Ditadora de Onirodinia, ela governa todas as inseguranças desse mundo.
+
+Mundo:
+Mapa: Onirodinia (nome da cidade), mais sombria por ter uma ditadora do mal
+Descrição do ambiente: Lugares do cotidiano da personagem um pouco alterados (devastados), ao decorrer da jornada e com a aproximação do último chefe, Aneleh, a davestação aumenta;
+Coesão entre fases: As fases conectam-se de modo a desenvolver o mundo e a história, mostrando aos poucos a degradação da cidade à medida que se aproxima do inimigo final;
+Intenção das fases: Ao decorrer das fases vamos tentar trabalhar os sentimentos, inseguranças e traumas da personagens personificados no oponentes e chefes.
+
+(Após a correção que recebemos, algumas alterações serão feitas nas informações desse Brainstorm e adiciondadas ao Documento de 10 páginas)
