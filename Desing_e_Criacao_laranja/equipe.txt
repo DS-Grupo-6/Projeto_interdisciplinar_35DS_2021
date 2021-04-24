@@ -34,6 +34,6 @@ Túlio: Programação (ROXO)
 Os integrantes roxos, de programação, são os responsáveis gerais da programação envolvendo o jogo a ser produzido.
 
 Virgínia: Continuidade e documentação (VERDE)
-O integrante azul cuida da documentação de todo o projeto, em geral. É responsável por manter a continuidade do projeto durante a produção.
+O integrante verde cuida da documentação de todo o projeto, em geral. É responsável por manter a continuidade do projeto durante a produção.
 
 
