@@ -7,13 +7,11 @@ window.addEventListener('keydown', function(event) {
 tecla = event.key;
 })
 var bolinha = new Ball(390,390,10,3,3,0);
-function Ball (x,y,radius, dx, dy, color) {
+function Ball (x,y,radius, color) {
 
     this.x = x;
     this.y = y;
     this.radius = radius;
-    this.dx = dx;
-    this.dy = dy;
     this.color = color;
 
     this.desenhar = function (){
@@ -35,9 +33,7 @@ function Ball (x,y,radius, dx, dy, color) {
             this.x = this.x + 3;
             tecla = '';
             }
- 
         }
-    this.desenhar();
  } 
  function animate(){
     requestAnimationFrame(animate);
