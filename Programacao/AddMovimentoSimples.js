@@ -3,8 +3,10 @@ canvas.width = 1350;
 canvas.height = 610;
 var c = canvas.getContext('2d');
 var tecla;
+var shift;
 window.addEventListener('keydown', function(event) {
 tecla = event.key;
+shift = event.shiftKey;
 })
 var bolinha = new Ball(390,390,10,3,3,0);
 function Ball (x,y,radius, color) {
@@ -24,16 +26,27 @@ function Ball (x,y,radius, color) {
     }
 
     this.andar = function () {
-        if((tecla=='a') || (tecla=='A')) {
-            this.x = this.x - 3;
-            tecla = '';
+        if(shift==true){
+            if((tecla=='a') || (tecla=='A')) {
+                this.x = this.x - 10;
+                tecla = '';
             }
-
-        if((tecla=='d') || (tecla=='D')) {
-            this.x = this.x + 3;
-            tecla = '';
+            if((tecla=='d') || (tecla=='D')) {
+                this.x = this.x + 10;
+                tecla = '';
             }
         }
+        else{
+            if((tecla=='a') || (tecla=='A')) {
+                this.x = this.x - 3;
+                tecla = '';
+            }
+            if((tecla=='d') || (tecla=='D')) {
+                this.x = this.x + 3;
+                tecla = '';
+            }
+        }
+    }
  } 
  function animate(){
     requestAnimationFrame(animate);
