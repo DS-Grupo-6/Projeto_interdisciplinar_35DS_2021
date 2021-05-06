@@ -70,15 +70,19 @@ Usamos o horário da aula de Desinvolvimento de Aplicativos e da aula de Linguag
 
 
 12ª Reunião: [30-04, 08:00]
-Usamos o horário da aula de Desinvolvimento de Sistemas para continuar fazendo o documento de 10 páginas.
+Usamos o horário da aula de Desinvolvimento de Sistemas para continuar fazendo o documento de 10 páginas e fazer algumas funções da programação.
+
 
 
 13ª Reunião: [03-05, 08:00]
-Continuamos o documento de 10 páginas, e Taero acrescentou "época" no tópico "mundo".
+Continuamos o documento de 10 páginas, algumas funções da programação e Taero acrescentou "época" no tópico "mundo".
 
 
 14ª Reunião: [04-05, 08:00]
 Continuamos o documento de 10 páginas.
+
+15ª Reunião: [06-05, 08:00]
+Continuamos o documento de 10 páginas e algumas funções da programação.
 
 
 
