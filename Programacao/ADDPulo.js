@@ -7,15 +7,17 @@ var tecla;
 window.addEventListener('keyup', function(event) {
     tecla = event.key;
 })
-var bolinha = new Ball(390,390,10,3,3,0);
+var ball = new Ball(390,390,50,3,3,0);
 function Ball (x,y,radius, color) {
   
    this.x = x;
    this.y = y;
    this.radius = radius;
    this.color = color;
-  
-
+   this.gravity = 0.05;
+   this.gravitySpeed = 0;
+   
+ 
   this.desenhar = function (){
         c.beginPath();
         c.strokeStyle = '#00AA00';
@@ -36,13 +38,13 @@ function Ball (x,y,radius, color) {
                 tecla = '';
             }
         } 
-
-        
+      
  } 
+
  function animate(){
     requestAnimationFrame(animate);
     c.clearRect(0,0,1350,610);
-    bolinha.desenhar();
-    bolinha.pular();
+    ball.desenhar();
+    ball.pular();
 }
 animate();
