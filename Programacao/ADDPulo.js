@@ -14,8 +14,7 @@ function Ball (x,y,radius, color) {
    this.y = y;
    this.radius = radius;
    this.color = color;
-   this.gravity = 0.05;
-   this.gravitySpeed = 0;
+   
    
  
   this.desenhar = function (){
