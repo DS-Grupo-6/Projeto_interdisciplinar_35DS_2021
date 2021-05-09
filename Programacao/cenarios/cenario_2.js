@@ -1,19 +1,29 @@
-var canvas = document.querySelector('canvas');
-canvas.width = 1350;
-canvas.height = 610;
-var c = canvas.getContext('2d');
+var canvas = document.querySelector('canvas'); //chama o canvas do html
+canvas.width = 1350; //define a largura do canvas
+canvas.height = 610; //define o tamanho do canva 
+var c = canvas.getContext('2d'); // define o contexto do canvas para 2d
 
-var imgBackground = new addImagem("sprites_cenario/BG.png", 0, 0, canvas.width, canvas.height);
-var chao = new addImagem("sprites_cenario/chao.png",0,482,1350,128)
-var arv1 = new addImagem("sprites_cenario/Tree_1.png",348,438,116,44)
-var arv2= new addImagem("sprites_cenario/Tree_3.png",604,207,282,275)
-var arb1 = new addImagem("sprites_cenario/Bush (3).png",677,435,73,47)
-var arb2= new addImagem("sprites_cenario/Bush (4).png",823,435,73,47)
-var arb3= new addImagem("sprites_cenario/Bush (4).png",885,435,73,47)
-var pedra = new addImagem("sprites_cenario/Stone.png",450,455,45,27)
-var placa = new addImagem("sprites_cenario/Sign.png",1100,350,200,200)
+var imgBackground = new addImagem("sprites_cenario/BG.png", 0, 0, canvas.width, canvas.height); //define a imagem de backgraund com o mesmo tamanho do canvas
 
-function addImagem(src, posX, posY, width, height) {
+var chao1 = new addImagem("sprites_cenario/chao2.png",256,486,384,128); //coloca o sprite da primeira parte do chão no canva com posições definidadas pelo objeto addImagem
+var chao2 = new addImagem("sprites_cenario/1.png",1280,482,128,128); //coloca o sprite da segunda parte do chão no canva com posições definidadas pelo objeto addImagem
+
+var plat1 = new addImagem("sprites_cenario/plat2.png",-1,322,192,64); //coloca o sprite da primeira plataforma no canva com posições definidadas pelo objeto addImagem
+var plat2 = new addImagem("sprites_cenario/plat.png",640,322,192,64); //coloca o sprite da segunda plataforma no canva com posições definidadas pelo objeto addImagem
+var plat3 = new addImagem("sprites_cenario/plat3.png",768,460,406.4,78.4); //coloca o sprite da terceira plataforma no canva com posições definidadas pelo objeto addImagem
+
+var pico = new addImagem("sprites_cenario/pico1.png",384,32,128,384); //coloca o sprite do "pico" no canva com posições definidadas pelo objeto addImagem
+
+var esp1 = new addImagem("sprites_cenario/Spike1.png",640,526,640,88); //coloca o sprite do primeiro espinho no canva com posições definidadas pelo objeto addImagem
+var esp2 = new addImagem("sprites_cenario/Spike.png",938,401,64,64); //coloca o sprite do segundo espinho no canva com posições definidadas pelo objeto addImagem
+
+var serra1 = new addImagem("sprites_cenario/Saw.png",910,194,128,128); //coloca o sprite da primeira serra no canva com posições definidadas pelo objeto addImagem
+var serra2 = new addImagem("sprites_cenario/Saw.png",910,66,128,128); //coloca o sprite da primeira serra no canva com posições definidadas pelo objeto addImagem
+
+var ObColisao2 = [chao1, chao2, plat1, plat2, plat3, pico, esp1, esp2, serra1, serra2]; //varável que armazena em um array todas as variáveis de sprite declaradas acima, essas variáveis representam objetos com colisão
+
+
+function addImagem(src, posX, posY, width, height) { //objeto que facilita a adição de imagens no canva
     this.image = new Image();
     this.image.src = src;
     this.width = width;
@@ -21,25 +31,32 @@ function addImagem(src, posX, posY, width, height) {
     this.posX = posX;
     this.posY = posY;  
 
-    this.update = function() {
+    this.update = function() { //função de define a posição da imagem no canva
         c.drawImage(this.image, this.posX, this.posY, this.width, this.height);
     }
 }
 
-function animate(){
+function animate(){ //função que desenha no canva
     requestAnimationFrame(animate);
     c.clearRect(0,0,1350,610);
 
+    //usando o método update() do objeto addImagem para desenhar as imagens no canvas
     imgBackground.update();
-    chao.update();
-    arv1.update();
-    arv2.update();
-    arb1.update();
-    arb2.update();
-    arb3.update();
-    pedra.update();
-    placa.update();
+
+    chao1.update();
+    chao2.update();
+    pico.update();
+
+    plat1.update();
+    plat2.update();
+    plat3.update();
+
+    esp1.update();
+    esp2.update();
+
+    serra1.update();
+    serra2.update();
 
 
 }
-animate();
+animate(); //chamando a função animate
