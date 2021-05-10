@@ -73,7 +73,7 @@ window.addEventListener('keyup', function(event) {
 
 function apareceCenario(){
     if (cenario == 1){
-        sorveteria = new addImagem("sprites_cenario/sorveteria.png",0,148,457,334 );//coloca o sprite da sorveteria no canva com posições definidadas pelo objeto addImagem
+        sorveteria = new addImagem("sprites_cenario/sorveteria.png",-50,110,587,441 );//coloca o sprite da sorveteria no canva com posições definidadas pelo objeto addImagem
         chao = new addImagem("sprites_cenario/chao1.png",0,482,640,128);//coloca o sprite do chão no canva com posições definidadas pelo objeto addImagem
         caixa = new addImagem("sprites_cenario/Crate.png",574,418,64,64);//coloca o sprite da caixa no canva com posições definidadas pelo objeto addImagem
         plat = new addImagem("sprites_cenario/plat.png",672,290,192,64);//coloca o sprite da plataforma1 no canva com posições definidadas pelo objeto addImagem
