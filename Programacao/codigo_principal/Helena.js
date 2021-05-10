@@ -279,7 +279,7 @@ function personagem(src, posX, posY, width, height,dy) { //funcao criaao persona
             this.dy = -7;
             hPulo += 1;
             this.image.src = sprites[6]
-            if(hPulo >= 42.85){ //verifica se atingiu altura máx de pulo
+            if(hPulo >= 42){ //verifica se atingiu altura máx de pulo
                 pulando = false; //para de pular
                 hPulo = 0;
             }
