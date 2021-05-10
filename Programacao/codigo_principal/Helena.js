@@ -77,7 +77,7 @@ function apareceCenario(){ //controla imagem que devem aparecer em cada cenario
         caixa = new addImagem("sprites_cenario/Crate.png",574,418,64,64);//coloca o sprite da caixa no canva com posições definidadas pelo objeto addImagem
         plat = new addImagem("sprites_cenario/plat.png",672,290,192,64);//coloca o sprite da plataforma1 no canva com posições definidadas pelo objeto addImagem
         plat1 = new addImagem("sprites_cenario/plat1.png",1158,322,192,64);//coloca o sprite da plataforma2 no canva com posições definidadas pelo objeto addImagem
-        pico = new addImagem("sprites_cenario/pico.png",960,150,64,256);//coloca o sprite do "pico" no canva com posições definidadas pelo objeto addImagem
+        pico = new addImagem("sprites_cenario/pico.png",960,170,64,256);//coloca o sprite do "pico" no canva com posições definidadas pelo objeto addImagem
         arv = new addImagem("sprites_cenario/Tree_2.png",380,226,256,256);//coloca o sprite da árvore no canva com posições definidadas pelo objeto addImagem
         arb = new addImagem("sprites_cenario/Bush (1).png",380,430,106.4,52);//coloca o sprite do arbusto no canva com posições definidadas pelo objeto addImagem
         objColisao = [chao, caixa, plat, pico, plat1];//varável que armazena em um array todas as variáveis de sprite declaradas acima, essas variáveis representam objetos com colisão
@@ -294,7 +294,7 @@ function personagem(src, posX, posY, width, height,dy) { //funcao criaao persona
         var posicaoY = this.posY;
         var largura = this.width;
         var altura = this.height;
-        var parametro = 7; //parametro de colisao (quanto a mais verifica de colisão)
+        var parametro = 10; //parametro de colisao (quanto a mais verifica de colisão)
         objColisao.forEach(function(item,indice){ //verifica colisao com todos os objetos que podem ter colisao
             if((posicaoX+largura >= objColisao[indice].posX) && (posicaoX <= objColisao[indice].posX+objColisao[indice].width) && (posicaoY+altura > objColisao[indice].posY) && (posicaoY+altura <= objColisao[indice].posY+parametro)){
                 colisaoChao = true; //verifica se há colisão com o chão
@@ -302,14 +302,14 @@ function personagem(src, posX, posY, width, height,dy) { //funcao criaao persona
                     dano(); //chama a função de dano
                 }
             }
-            if((posicaoX+largura >= objColisao[indice].posX) && (posicaoX <= objColisao[indice].posX+parametro) && (posicaoY+altura > objColisao[indice].posY) && (posicaoY <= objColisao[indice].posY+objColisao[indice].height)||((posicaoX+largura>=canvas.width)&&(cenario==3))){
-                colisaoEsquerda = true;
+            if((posicaoX+largura >= objColisao[indice].posX) && (posicaoX+largura <= objColisao[indice].posX+parametro) && (posicaoY+altura > objColisao[indice].posY) && (posicaoY <= objColisao[indice].posY+objColisao[indice].height)||((posicaoX+largura>=canvas.width)&&(cenario==3))){
+                colisaoEsquerda = true; //colisao com o lado esquerdo do objeto
                 if(((indice==6)||(indice==7)||(indice==8))&&(cenario==2)){ //verifica se a colisao ocorreu com objetos que dão dano (serras e espinhos)
                     dano(); //chama a função de dano
                 }
             }
             if((posicaoX <= objColisao[indice].posX+objColisao[indice].width)&&(posicaoX >= objColisao[indice].posX+objColisao[indice].width-parametro)&&(posicaoY+altura > objColisao[indice].posY) && (posicaoY <= objColisao[indice].posY+objColisao[indice].height)||((posicaoX<=0)&&(cenario==1))){
-                colisaoDireita = true;
+                colisaoDireita = true;//colisao com o lado direito do objeto
                 if(((indice==6)||(indice==7)||(indice==8))&&(cenario==2)){ //verifica se a colisao ocorreu com objetos que dão dano (serras e espinhos)
                     dano(); //chama a função de dano
                 }
