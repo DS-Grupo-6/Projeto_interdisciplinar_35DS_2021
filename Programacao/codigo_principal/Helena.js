@@ -4,10 +4,10 @@ canvas.height = 610; //define tamanho canvas
 var c = canvas.getContext('2d'); //define o contexto do canvas para 2d
 var cenario = 1; //controle dos cenários
 
-const botaoSom = document.querySelector('button') //adiciona o audio
+const botaoSom = document.querySelector('button'); //adiciona o audio
 botaoSom.addEventListener('click', function(){
-    const audio = document.querySelector('audio')
-    audio.play()
+    const audio = document.querySelector('audio');
+    audio.play();
 })
 
 var tecla; //define variaveis captura teclas
@@ -240,13 +240,13 @@ function personagem(src, posX, posY, width, height,dy) { //funcao criaao persona
             if(colisaoDireita==false){ //se não tiver colisão, corre para esquerda ou direita
                 if((tecla=='a') || (tecla=='A')) {
                     this.posX = this.posX - 10;
-                    this.image.src = sprites[5] 
+                    this.image.src = sprites[5];
                 }
             }
             if(colisaoEsquerda==false){
                 if((tecla=='d') || (tecla=='D')) {
                     this.posX = this.posX + 10;
-                    this.image.src = sprites[4] 
+                    this.image.src = sprites[4]; 
                     }
             }
         }
@@ -254,7 +254,7 @@ function personagem(src, posX, posY, width, height,dy) { //funcao criaao persona
             if(colisaoDireita==false){//se não tiver colisão, anda para esquerda ou direita
                 if((tecla=='a') || (tecla=='A')) {
                     this.posX = this.posX - 3;
-                    this.image.src = sprites[3]
+                    this.image.src = sprites[3];
                     }
             }
             if(colisaoEsquerda==false){
@@ -278,7 +278,7 @@ function personagem(src, posX, posY, width, height,dy) { //funcao criaao persona
             pulando = true;
             this.dy = -7;
             hPulo += 1;
-            this.image.src = sprites[6]
+            this.image.src = sprites[6];
             if(hPulo >= 42){ //verifica se atingiu altura máx de pulo
                 pulando = false; //para de pular
                 hPulo = 0;
