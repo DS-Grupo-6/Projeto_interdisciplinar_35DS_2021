@@ -9,3 +9,7 @@ mas logo descobre que as coisas nesse mundo estão bem piores do que ela imagina
 terá que derrotar a tirania da imperatriz Aneleh.
    
    Durante as fases Helena enfrenta perigos,utilizando de suas habilidades para combate-los e aprendendo novas no processo com o objetivo de descobrir um metódo de sair dessa realidade e voltar para sua casa.
+
+         Como acessar o jogo
+Para acessar o jogo, deve-se abrir a pasta Programação e, em seguida, codigo_principal. Dentro da pasta estarão todas as imagens, programações e trilha sonora.
+Para jogar, deve-se baixar a pasta codigo_principal e abrir o arquivo index.html no navegador de sua preferência.
