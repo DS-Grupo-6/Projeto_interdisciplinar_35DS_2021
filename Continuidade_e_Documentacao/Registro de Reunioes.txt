@@ -119,7 +119,13 @@ Kayam saiu do grupo e a Karolaine entrou no lugar dele, estávamos pesquisando t
 
 
 21ª Reunião: [26-05, 17:30]
+<<<<<<< HEAD
 Reunimos para debater as características dos personagens, mas não terminamos então deixamos para fazer no feriado.
+=======
+Reunimos para debatermos sobre as características das personagens.
+
+
+>>>>>>> 758030065a0c330ef6efd37beb7a3af5d6c5b7fa
 
 
 
